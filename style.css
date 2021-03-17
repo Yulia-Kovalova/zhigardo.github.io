@@ -386,10 +386,7 @@
 
 @media(max-width:767px) {
     .header-row {
-        flex-direction: column;
         flex-wrap: wrap;
-        justify-content: flex-start;
-        padding-left: 10px;
     }
     .logo {
         height: 50px;
@@ -500,6 +497,13 @@
     .big-picture-text p, .small-picture-text p {
         padding-bottom: 15px;
     }
+    .services-body {
+        flex-direction: column;
+        align-items: center;
+    }
+    .service-item {
+        margin-bottom: 35px;
+    }
 }
 
 
@@ -512,10 +516,12 @@
     top: 0;
     left: 0;
     z-index: 10;
+    height: fit-content;
+    width: 100%;
+    line-height: 80px;
 }
 .header-row {
     display: flex;
-    align-items: center;
     width: 100%;
     height: 75px;
 }
@@ -526,6 +532,7 @@
     display: flex;
     margin-right: 12px;
     overflow: auto;
+    margin-top: 27px;
 }
 .submenu {
     font-size: 18px;
@@ -540,8 +547,7 @@
     border-bottom: 2px solid #CB9274;
     transform: rotate(0.28deg);
 }
-.select-langauge,
-.select-langauge > option {
+.select-langauge {
     height: 22px;
     line-height: 22px;
     border: none;
@@ -627,34 +633,59 @@
 
 /* About us */
 
-.about-us {
+.about-us, .services {
     margin: 120px 0 30px;
 }
-.about-us-head {
+.about-us-head, .services-head {
     font-family: 'Montserrat', sans-serif;
     font-weight: 300;
     font-size: 20px;
     color: #252324;
     line-height: 24px;
     letter-spacing: 0.02em;
-    text-transform: uppercase;
     margin-bottom:50px;
 }
-.about-us-head p {
+.about-us-head p, .services-head p {
     width: 225px;
+    text-transform: uppercase;
 }
-.about-us-head p:hover {
+.about-us-head p:hover, .services-head p:hover {
     border-bottom: 2px solid #CB9274;
     transform: rotate(0.28deg);
 }
-.about-us-head h3 {
+.about-us-head h3, .services-head h3 {
     width: 225px;
     font-weight: 600;
     font-size: 36px;
     line-height: 44px;
     letter-spacing: 0.09em;
 }
-.about-us-head h3:hover {
+.about-us-head h3:hover, .services-head h3:hover {
     border-top: 2px solid #CB9274;
     transform: rotate(0.28deg);
+}
+
+
+
+/* Services */
+
+.services-body {
+    display: flex;
+    justify-content: space-around;
+    padding-right: 15px;
+}
+.service-item {
+    padding: 40px 15px 0;
+}
+.service-item > img {
+    width: 100%;
+    padding-bottom: 20px;
+}
+.service-item > div {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 27px;
+    line-height: 43px;
+    text-align: center;
+    color: #252324;
 }
