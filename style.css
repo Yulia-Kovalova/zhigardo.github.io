@@ -133,7 +133,7 @@
         justify-content: flex-start;
         overflow: scroll;
     }
-    .big-transparent-text h2 {
+    .big-transparent-text {
         max-width: 100%;
         font-size: 80px;
     }
@@ -154,7 +154,7 @@
     .big-picture-text p, .small-picture-text p {
         padding-bottom: 15px;
     }
-    .about-us-text-about p {
+    .about-us-text-about {
         bottom: 115px;
         left: 365px;
         max-width: 100%;
@@ -169,6 +169,12 @@
     }
     .arrow-right {
         display: none;
+    }
+    .portfolio-text-portfolio {
+        bottom: 25px;
+        left: 155px;
+        max-width: 100%;
+        font-size: 90px;
     }
 }
 
@@ -236,7 +242,7 @@
         font-size: 20px;
         line-height: 35px;
     }
-    .big-transparent-text h2 {
+    .big-transparent-text {
         max-width: 100%;
         font-size: 110px;
         letter-spacing: 0.08em;
@@ -286,12 +292,11 @@
     .small-picture-text p {
         width: 110%;
     }
-    .about-us-text-about p {
+    .about-us-text-about {
         bottom: 0px;
         left: 425px;
         font-size: 110px;
         max-width: 100%;
-        letter-spacing: 0.08em;
     }
     .portfolio-body {
         margin-left: -20px;
@@ -306,6 +311,12 @@
         display: block;
         top: 125px;
         right: -30px;
+    }
+    .portfolio-text-portfolio {
+        bottom: 35px;
+        left: 205px;
+        font-size: 120px;
+        max-width: 100%;
     }
 }
 
@@ -372,6 +383,10 @@
         font-size: 20px;
         line-height: 35px;
     }
+    .big-transparent-text {
+        max-width: 100%;
+        font-size: 150px;
+    }
     .big-picture:after, .small-picture:after {
         content: "";
         clear: both;
@@ -413,7 +428,7 @@
     .small-picture-text p {
         width: 105%;
     }
-    .about-us-text-about p {
+    .about-us-text-about {
         bottom: 35px;
         left: 570px;
         width: 50%;
@@ -432,6 +447,12 @@
         display: block;
         top: 145px;
         right: -35px;
+    }
+    .portfolio-text-portfolio {
+        bottom: 50px;
+        left: 245px;
+        max-width: 100%;
+        font-size: 150px;
     }
 }
 
@@ -530,7 +551,7 @@
         line-height: 28px;
         margin-bottom: 30px;
     }
-    .big-transparent-text h2 {
+    .big-transparent-text {
         max-width: 100%;
         font-size: 38px;
         letter-spacing: 0.07em;
@@ -552,7 +573,7 @@
     .big-picture-text p, .small-picture-text p {
         padding-bottom: 15px;
     }
-    .about-us-text-about p {
+    .about-us-text-about {
         bottom: 188px;
         right: 1px;
         max-width: 100%;
@@ -574,6 +595,12 @@
     }
     .arrow-right {
         display: none;
+    }
+    .portfolio-text-portfolio {
+        bottom: 20px;
+        right: -5px;
+        max-width: 100%;
+        font-size: 50px;
     }
 }
 
@@ -676,7 +703,7 @@
 }
 .slider-text button, .portfolio-body button {
     height: 50px;
-    background: #CB9274;
+    background-color: #CB9274;
     border: 2px solid #CB9274;
     border-radius: 2px;
     outline: none;
@@ -685,18 +712,16 @@
     font-size: 20px;
     line-height: 24px;
     color: #FFFFFF;
-    text-transform: uppercase;
+    font-variant: small-caps;
 }
 .slider-text button {
     width: 190px;
 }
 .slider-text button:hover, .portfolio-body button:hover {
-    background: #FFFFFF;
-    border: 2px solid #CB9274;
+    background-color: #FFFFFF;
     color: #CB9274;
-    outline: none;
 }
-.big-transparent-text, .about-us-text-about p {
+.big-transparent-text, .about-us-text-about, .portfolio-text-portfolio {
     display: block;
     position: absolute;
     font-family: 'Montserrat', sans-serif;
@@ -706,8 +731,7 @@
 .big-transparent-text {
     bottom: 0px;
     left: 30px;
-    width: 100%;
-    font-size: 150px;
+    max-width: 100%;
     letter-spacing: 0.09em;
     -webkit-text-stroke-color: #CB9274;
     -webkit-text-stroke-width: 1px;
@@ -749,10 +773,10 @@
     border-top: 2px solid #CB9274;
     transform: rotate(0.28deg);
 }
-.about-us, .portfolio-body {
+.about-us, .portfolio {
     position: relative;
 }
-.about-us-text-about p {
+.about-us-text-about {
     letter-spacing: 0.09em;
     -webkit-text-stroke-width: 1px;
     -webkit-text-fill-color: rgba(244, 243, 241, 0.4);
@@ -793,7 +817,7 @@
 .portfolio-body-pictures {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 20px;
+    margin-bottom: 25px;
 }
 .all-pictures img {
     width: 100%;
@@ -814,4 +838,9 @@
     width: 250px;
     display: block;
     margin: 0 auto;
+}
+.portfolio-text-portfolio {
+    letter-spacing: 0.09em;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-fill-color: rgba(244, 243, 241, 0.6);
 }
