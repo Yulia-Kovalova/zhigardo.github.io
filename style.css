@@ -154,6 +154,22 @@
     .big-picture-text p, .small-picture-text p {
         padding-bottom: 15px;
     }
+    .about-us-text-about p {
+        bottom: 115px;
+        left: 365px;
+        max-width: 100%;
+        font-size: 90px;
+    }
+    .portfolio-body {
+        margin-left: -12px;
+        margin-right: 6px;
+    }
+    .arrow-left {
+        display: none;
+    }
+    .arrow-right {
+        display: none;
+    }
 }
 
 @media(min-width:992px) {
@@ -225,9 +241,6 @@
         font-size: 110px;
         letter-spacing: 0.08em;
     }
-    .about-us-body {
-        position: relative;
-    }
     .big-picture:after, .small-picture:after {
         content: "";
         clear: both;
@@ -272,6 +285,27 @@
     }
     .small-picture-text p {
         width: 110%;
+    }
+    .about-us-text-about p {
+        bottom: 0px;
+        left: 425px;
+        font-size: 110px;
+        max-width: 100%;
+        letter-spacing: 0.08em;
+    }
+    .portfolio-body {
+        margin-left: -20px;
+        margin-right: 20px;
+    }
+    .arrow-left {
+        display: block;
+        top: 125px;
+        left: -30px;
+    }
+    .arrow-right {
+        display: block;
+        top: 125px;
+        right: -30px;
     }
 }
 
@@ -338,9 +372,6 @@
         font-size: 20px;
         line-height: 35px;
     }
-    .about-us-body {
-        position: relative;
-    }
     .big-picture:after, .small-picture:after {
         content: "";
         clear: both;
@@ -381,6 +412,26 @@
     }
     .small-picture-text p {
         width: 105%;
+    }
+    .about-us-text-about p {
+        bottom: 35px;
+        left: 570px;
+        width: 50%;
+        font-size: 150px;
+    }
+    .portfolio-body {
+        margin-left: -20px;
+        margin-right: 20px;
+    }
+    .arrow-left {
+        display: block;
+        top: 145px;
+        left: -35px;
+    }
+    .arrow-right {
+        display: block;
+        top: 145px;
+        right: -35px;
     }
 }
 
@@ -426,6 +477,10 @@
         max-width: 280px;
         transform: translateX(150%);
         transition: transform 500ms ease-in-out;
+    }
+    .burger-lines-right-side {
+        display: flex;
+        justify-content: flex-end;
     }
     .hidden-menu {
         opacity: 0;
@@ -497,12 +552,28 @@
     .big-picture-text p, .small-picture-text p {
         padding-bottom: 15px;
     }
+    .about-us-text-about p {
+        bottom: 188px;
+        right: 1px;
+        max-width: 100%;
+        font-size: 50px;
+    }
     .services-body {
         flex-direction: column;
         align-items: center;
     }
     .service-item {
         margin-bottom: 35px;
+    }
+    .portfolio-body-pictures {
+        flex-direction: column;
+        align-items: center;
+    }
+    .arrow-left {
+        display: none;
+    }
+    .arrow-right {
+        display: none;
     }
 }
 
@@ -557,6 +628,14 @@
     color: #252324;
     margin-top: 3px;
     text-transform: uppercase;
+    appearance: none;
+    background-image: url(images/arrow_down.svg);
+    background-repeat: no-repeat;
+    background-position: 25px -2px;
+    width: 50px;
+}
+.select-langauge-right-side {
+    text-align: right;
 }
 
 
@@ -595,34 +674,40 @@
     margin-bottom: 40px;
     letter-spacing: 0.03em;
 }
-.slider-text button {
-    width: 190px;
+.slider-text button, .portfolio-body button {
     height: 50px;
     background: #CB9274;
     border: 2px solid #CB9274;
     border-radius: 2px;
     outline: none;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
     font-size: 20px;
     line-height: 24px;
     color: #FFFFFF;
     text-transform: uppercase;
 }
-.slider-text button:hover {
+.slider-text button {
+    width: 190px;
+}
+.slider-text button:hover, .portfolio-body button:hover {
     background: #FFFFFF;
     border: 2px solid #CB9274;
     color: #CB9274;
     outline: none;
 }
-.big-transparent-text {
+.big-transparent-text, .about-us-text-about p {
     display: block;
-    width: 100%;
     position: absolute;
-    bottom: 0px;
-    left: 30px;
     font-family: 'Montserrat', sans-serif;
     font-weight: 800;
-    font-size: 150px;
     line-height: 183px;
+}
+.big-transparent-text {
+    bottom: 0px;
+    left: 30px;
+    width: 100%;
+    font-size: 150px;
     letter-spacing: 0.09em;
     -webkit-text-stroke-color: #CB9274;
     -webkit-text-stroke-width: 1px;
@@ -633,10 +718,10 @@
 
 /* About us */
 
-.about-us, .services {
+.about-us, .services, .portfolio {
     margin: 120px 0 30px;
 }
-.about-us-head, .services-head {
+.about-us-head, .services-head, .portfolio-head {
     font-family: 'Montserrat', sans-serif;
     font-weight: 300;
     font-size: 20px;
@@ -645,24 +730,32 @@
     letter-spacing: 0.02em;
     margin-bottom:50px;
 }
-.about-us-head p, .services-head p {
+.about-us-head p, .services-head p, .portfolio-head p {
     width: 225px;
     text-transform: uppercase;
 }
-.about-us-head p:hover, .services-head p:hover {
+.about-us-head p:hover, .services-head p:hover, .portfolio-head p:hover {
     border-bottom: 2px solid #CB9274;
     transform: rotate(0.28deg);
 }
-.about-us-head h3, .services-head h3 {
+.about-us-head h3, .services-head h3, .portfolio-head h3 {
     width: 225px;
     font-weight: 600;
     font-size: 36px;
     line-height: 44px;
     letter-spacing: 0.09em;
 }
-.about-us-head h3:hover, .services-head h3:hover {
+.about-us-head h3:hover, .services-head h3:hover, .portfolio-head h3:hover {
     border-top: 2px solid #CB9274;
     transform: rotate(0.28deg);
+}
+.about-us, .portfolio-body {
+    position: relative;
+}
+.about-us-text-about p {
+    letter-spacing: 0.09em;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-fill-color: rgba(244, 243, 241, 0.4);
 }
 
 
@@ -676,6 +769,8 @@
 }
 .service-item {
     padding: 40px 15px 0;
+    background: #FFFFFF;
+    box-shadow: 0px 8px 24px rgba(168, 168, 168, 0.2);
 }
 .service-item > img {
     width: 100%;
@@ -688,4 +783,35 @@
     line-height: 43px;
     text-align: center;
     color: #252324;
+    padding-bottom: 20px;
+}
+
+
+
+/* Portfolio */
+
+.portfolio-body-pictures {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.all-pictures img {
+    width: 100%;
+}
+.portfolio-body-picture1 img {
+    max-height: 400px;
+}
+.portfolio-body-picture2 img {
+    max-height: 525px;
+}
+.portfolio-body-picture3 img {
+    max-height: 400px;
+}
+.arrow-left, .arrow-right {
+    position: absolute;
+}
+.portfolio-body button {
+    width: 250px;
+    display: block;
+    margin: 0 auto;
 }
