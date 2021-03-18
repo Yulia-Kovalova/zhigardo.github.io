@@ -773,7 +773,7 @@
     border-top: 2px solid #CB9274;
     transform: rotate(0.28deg);
 }
-.about-us, .portfolio {
+.about-us, .portfolio-body, .portfolio {
     position: relative;
 }
 .about-us-text-about {
