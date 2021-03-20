@@ -134,6 +134,8 @@
         overflow: scroll;
     }
     .big-transparent-text {
+        bottom: 15px;
+        left: 30px;
         max-width: 100%;
         font-size: 80px;
     }
@@ -155,8 +157,8 @@
         padding-bottom: 15px;
     }
     .about-us-text-about {
-        bottom: 115px;
-        left: 365px;
+        bottom: 160px;
+        left: 300px;
         max-width: 100%;
         font-size: 90px;
     }
@@ -171,10 +173,23 @@
         display: none;
     }
     .portfolio-text-portfolio {
-        bottom: 25px;
+        bottom: 70px;
         left: 155px;
         max-width: 100%;
         font-size: 90px;
+    }
+    .appointment-body-form {
+        max-width: 50%;
+        padding-right: 60px;
+    }
+    .form-fields input {
+        margin-bottom: 39px;
+    }
+    .appointment-text-appointment {
+        bottom: 10px;
+        left: 300px;
+        max-width: 100%;
+        font-size: 48px;
     }
 }
 
@@ -243,6 +258,8 @@
         line-height: 35px;
     }
     .big-transparent-text {
+        bottom: 25px;
+        left: 30px;
         max-width: 100%;
         font-size: 110px;
         letter-spacing: 0.08em;
@@ -293,8 +310,8 @@
         width: 110%;
     }
     .about-us-text-about {
-        bottom: 0px;
-        left: 425px;
+        bottom: 30px;
+        left: 420px;
         font-size: 110px;
         max-width: 100%;
     }
@@ -313,10 +330,23 @@
         right: -30px;
     }
     .portfolio-text-portfolio {
-        bottom: 35px;
-        left: 205px;
-        font-size: 120px;
+        bottom: 70px;
+        left: 200px;
         max-width: 100%;
+        font-size: 120px;
+    }
+    .appointment-body-form {
+        max-width: 50%;
+        padding-right: 60px;
+    }
+    .form-fields input {
+        margin-bottom: 50px;
+    }
+    .appointment-text-appointment {
+        bottom: -5px;
+        left: 145px;
+        max-width: 100%;
+        font-size: 90px;
     }
 }
 
@@ -384,8 +414,12 @@
         line-height: 35px;
     }
     .big-transparent-text {
+        bottom: 10px;
+        left: 30px;
+        letter-spacing: 0.09em;
         max-width: 100%;
-        font-size: 150px;
+        font-size: 140px;
+        line-height: 183px;
     }
     .big-picture:after, .small-picture:after {
         content: "";
@@ -433,6 +467,7 @@
         left: 570px;
         width: 50%;
         font-size: 150px;
+        line-height: 183px;
     }
     .portfolio-body {
         margin-left: -20px;
@@ -449,14 +484,29 @@
         right: -35px;
     }
     .portfolio-text-portfolio {
-        bottom: 50px;
+        bottom: 60px;
         left: 245px;
         max-width: 100%;
         font-size: 150px;
+        line-height: 160px;
     }
     .blog-item {
         margin-left: 15px;
         margin-right: 15px;
+    }
+    .appointment-body-form {
+        max-width: 50%;
+        padding-right: 150px;
+    }
+    .form-fields input {
+        margin-bottom: 50px;
+    }
+    .appointment-text-appointment {
+        bottom: 5px;
+        left: 80px;
+        max-width: 100%;
+        font-size: 120px;
+        line-height: 150px;
     }
 }
 
@@ -556,8 +606,10 @@
         margin-bottom: 30px;
     }
     .big-transparent-text {
+        bottom: 90px;
+        left: 20px;
         max-width: 100%;
-        font-size: 38px;
+        font-size: 40px;
         letter-spacing: 0.07em;
     }
     .big-picture-image img, .small-picture-image img {
@@ -578,16 +630,16 @@
         padding-bottom: 15px;
     }
     .about-us-text-about {
-        bottom: 188px;
-        right: 1px;
+        bottom: 250px;
+        right: 0;
         max-width: 100%;
         font-size: 50px;
     }
-    .services-body, .portfolio-body-pictures, .blog-body-items {
+    .services-body, .portfolio-body-pictures, .blog-body-items, .appointment-body {
         flex-direction: column;
         align-items: center;
     }
-    .service-item, .blog-item {
+    .service-item {
         margin-bottom: 35px;
     }
     .arrow-left {
@@ -597,10 +649,24 @@
         display: none;
     }
     .portfolio-text-portfolio {
-        bottom: 20px;
+        bottom: 110px;
         right: -5px;
         max-width: 100%;
         font-size: 50px;
+    }
+    .appointment-body-form {
+        padding-right: 0;
+        max-width: 100%;
+        margin-bottom: 120px;
+    }
+    .form-fields input {
+        margin-bottom: 50px;
+    }
+    .appointment-text-appointment {
+        bottom: 10px;
+        left: 10px;
+        max-width: 100%;
+        font-size: 33px;
     }
 }
 
@@ -646,7 +712,6 @@
     transform: rotate(0.28deg);
 }
 .select-langauge {
-    height: 22px;
     line-height: 22px;
     border: none;
     outline: none;
@@ -654,7 +719,6 @@
     font-weight: 400;
     color: #252324;
     margin-top: 3px;
-    text-transform: uppercase;
     appearance: none;
     background-image: url(images/arrow_down.svg);
     background-repeat: no-repeat;
@@ -701,7 +765,7 @@
     margin-bottom: 40px;
     letter-spacing: 0.03em;
 }
-.slider-text button, .portfolio-body button, .blog-body button {
+.slider-text button, .portfolio-body button, .blog-body button, .appointment-body-form button {
     height: 50px;
     background-color: #CB9274;
     border: 2px solid #CB9274;
@@ -714,25 +778,20 @@
     color: #FFFFFF;
     font-variant: small-caps;
 }
-.slider-text button {
+.slider-text button, .appointment-body-form button {
     width: 190px;
 }
-.slider-text button:hover, .portfolio-body button:hover, .blog-body button:hover {
+.slider-text button:hover, .portfolio-body button:hover, .blog-body button:hover, .appointment-body-form button:hover {
     background-color: #FFFFFF;
     color: #CB9274;
 }
-.big-transparent-text, .about-us-text-about, .portfolio-text-portfolio {
+.big-transparent-text, .about-us-text-about, .portfolio-text-portfolio, .appointment-text-appointment {
     display: block;
     position: absolute;
     font-family: 'Montserrat', sans-serif;
     font-weight: 800;
-    line-height: 183px;
 }
 .big-transparent-text {
-    bottom: 0px;
-    left: 30px;
-    max-width: 100%;
-    letter-spacing: 0.09em;
     -webkit-text-stroke-color: #CB9274;
     -webkit-text-stroke-width: 1px;
     -webkit-text-fill-color: transparent;
@@ -742,38 +801,38 @@
 
 /* About us */
 
-.about-us, .services, .portfolio, .blog {
-    margin: 120px 0 30px;
+.about-us, .services, .portfolio, .blog, .appointment {
+    margin-top: 150px;
 }
-.about-us-head, .services-head, .portfolio-head, .blog-head {
+.about-us-head, .services-head, .portfolio-head, .blog-head, .appointment-head {
     font-family: 'Montserrat', sans-serif;
     font-weight: 300;
     font-size: 20px;
     color: #252324;
     line-height: 24px;
     letter-spacing: 0.02em;
-    margin-bottom:50px;
+    margin-bottom: 50px;
 }
-.about-us-head p, .services-head p, .portfolio-head p, .blog-head p {
-    width: 225px;
-    text-transform: uppercase;
+.about-us-head p, .services-head p, .portfolio-head p, .blog-head p, .appointment-head p {
+    max-width: 560px;
+    font-variant: small-caps;
 }
-.about-us-head p:hover, .services-head p:hover, .portfolio-head p:hover, .blog-head p:hover {
+.about-us-head p:hover, .services-head p:hover, .portfolio-head p:hover, .blog-head p:hover, .appointment-head p:hover {
     border-bottom: 2px solid #CB9274;
     transform: rotate(0.28deg);
 }
-.about-us-head h3, .services-head h3, .portfolio-head h3, .blog-head h3 {
-    width: 225px;
+.about-us-head h3, .services-head h3, .portfolio-head h3, .blog-head h3, .appointment-head h3 {
+    max-width: 560px;
     font-weight: 600;
     font-size: 36px;
     line-height: 44px;
     letter-spacing: 0.09em;
 }
-.about-us-head h3:hover, .services-head h3:hover, .portfolio-head h3:hover, .blog-head h3:hover {
+.about-us-head h3:hover, .services-head h3:hover, .portfolio-head h3:hover, .blog-head h3:hover, .appointment-head h3:hover {
     border-top: 2px solid #CB9274;
     transform: rotate(0.28deg);
 }
-.about-us, .portfolio-body, .portfolio {
+.about-us, .portfolio-body, .portfolio, .appointment {
     position: relative;
 }
 .about-us-text-about {
@@ -841,7 +900,7 @@
     display: block;
     margin: 0 auto;
 }
-.portfolio-text-portfolio {
+.portfolio-text-portfolio, .appointment-text-appointment {
     letter-spacing: 0.09em;
     -webkit-text-stroke-width: 1px;
     -webkit-text-fill-color: rgba(244, 243, 241, 0.6);
@@ -878,4 +937,45 @@
     width: 225px;
     display: block;
     margin: 0 auto;
+}
+
+
+/* Appointment */
+
+.appointment-body {
+    display: flex;
+    justify-content: space-between;
+}
+.appointment-body-form {
+    width: 95%;
+    max-height: 485px;
+    padding-top: 20px;
+}
+.form-fields {
+    display: flex;
+    flex-direction: column;
+}
+.form-fields input {
+    border: none;
+    border-bottom: 2px solid #D4D2D7;
+    outline: none;
+    text-indent: 35px;
+    padding-bottom: 10px;
+}
+.form-fields input::placeholder {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 18px;
+    letter-spacing: 0.02em;
+    color: rgba(0, 0, 0, 0.6);
+}
+.appointment-picture {
+    max-height: fit-content;
+}
+.appointment-picture img {
+    max-width: 100%;
+}
+.appointment-body-form button {
+    float: right;
 }
