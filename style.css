@@ -191,6 +191,13 @@
         max-width: 100%;
         font-size: 48px;
     }
+    .footer-info {
+        flex-wrap: wrap;
+    }
+    .footer-info > div {
+        min-height: 180px;
+        margin-top: 90px;
+    }
 }
 
 @media(min-width:992px) {
@@ -550,6 +557,7 @@
         bottom: 0;
         width: 280px;
         max-width: 280px;
+        max-height: 360px;
         transform: translateX(150%);
         transition: transform 500ms ease-in-out;
     }
@@ -668,6 +676,14 @@
         max-width: 100%;
         font-size: 33px;
     }
+    .footer-info {
+        flex-direction: column;
+    }
+    .footer-info > div {
+        min-height: 180px;
+        margin-top: 90px;
+        margin-left: 30px;
+    }
 }
 
 
@@ -707,18 +723,18 @@
     margin-left: 44px;
     min-width: fit-content;
 }
-.submenu:hover {
+.submenu:hover, .footer-navigate-menu div:hover {
     border-bottom: 2px solid #CB9274;
     transform: rotate(0.28deg);
 }
 .select-langauge {
-    line-height: 22px;
-    border: none;
-    outline: none;
+    font-family: 'Montserrat', sans-serif;
     font-size: 18px;
     font-weight: 400;
     color: #252324;
-    margin-top: 3px;
+    line-height: 22px;
+    border: none;
+    outline: none;
     appearance: none;
     background-image: url(images/arrow_down.svg);
     background-repeat: no-repeat;
@@ -978,4 +994,98 @@
 }
 .appointment-body-form button {
     float: right;
+}
+
+
+
+/* Footer */
+
+.footer {
+    background-color: #FAF9F8;
+}
+.footer-info {
+    display: flex;
+    justify-content: space-between;
+    padding: 60px 25px 80px 0;
+}
+.footer-logo-and-subscribe, .footer-language-and-follow {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.footer-subscribe h6 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 29px;
+    letter-spacing: 0.02em;
+    color: #252324;
+    padding-bottom: 15px;
+}
+.footer-subscribe input {
+    border: none;
+    border-bottom: 2px solid rgba(74, 73, 73, 0.5);
+    outline: none;
+    text-indent: -1px;
+    padding-bottom: 10px;
+    min-width: 230px;
+    background-image: url(images/footer_arrow_right.svg);
+    background-repeat: no-repeat;
+    background-position: right -3px;
+}
+.footer-subscribe input::placeholder {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 18px;
+    letter-spacing: 0.02em;
+    color: #4A4949;
+}
+.footer-navigate-head, .footer-navigate-menu, .footer-showrooms-head, .footer-showrooms-locations p, .footer-contacts h6, .footer-contacts p, .footer-language h6, .follow-us-on {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    line-height: 29px;
+    letter-spacing: 0.02em;
+}
+.footer-navigate-head, .footer-showrooms-head, .footer-contacts h6, .footer-language h6, .follow-us-on {
+    font-weight: 500;
+    color: #252324;
+    padding-bottom: 15px;
+}
+.footer-navigate-menu div {
+    padding-top: 12px;
+}
+.footer-navigate-menu div a, .footer-showrooms-locations p, .footer-contacts p {
+    text-decoration: none;
+    font-weight: 400;
+    color: #4A4949;
+}
+.location {
+    display: flex;
+    padding-bottom: 25px;
+}
+.location-pin {
+    padding: 15px 15px 0 0;
+}
+.footer-contacts {
+    padding-top: 5px;
+}
+.select-footer-langauge {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    color: #252324;
+    line-height: 29px;
+    letter-spacing: 0.02em;
+    border: none;
+    outline: none;
+    appearance: none;
+    background-image: url(images/arrow_down.svg);
+    background-repeat: no-repeat;
+    background-position: right 3px;
+    width: 102px;
+}
+.follow-us-on-icons a {
+    text-decoration: none;
+    padding-right: 30px;
 }

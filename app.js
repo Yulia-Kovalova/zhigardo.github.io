@@ -13,7 +13,7 @@ mobileMenu.addEventListener("click", function () {
 
 // Add slider slick
 $(".slider-block").slick({
-    // autoplay:true,
+    autoplay:true,
     autoplaySpeed:3000,
     dots:true,
     infinite: true,
